@@ -51,7 +51,7 @@ public class DeDupTest {
 	}
 	
 	@Test
-	public void withoutDupsTest(){
+	public void uniqueNumbersWithoutCollectionTest(){
 		
 		int[] randomIntegers = { 1, 2, 34, 34, 25, 1, 45, 3, 26, 85, 4, 34, 86, 25, 43, 2, 1, 10000, 11, 16, 19, 1,
 				18, 4, 9, 3, 20, 17, 8, 15, 6, 2, 5, 10, 14, 12, 13, 7, 8, 9, 1, 2, 15, 12, 18, 10, 14, 20, 17, 16, 3, 6,
@@ -63,13 +63,14 @@ public class DeDupTest {
 	}
 	
 	@Test
-	public void withoutDupsTestEmptyArray(){
+	public void uniqueNumbersWithoutCollectionEmptyArrayTest(){
 		
-		int[] randomIntegers = {};
+		int[] randomIntegers = {1};
 		
 		int[] output = deDup.uniqueNumbersWithoutCollection(randomIntegers);
 		
-		assertEquals(null, output);
+		//assertEquals(null, output);
+		assertEquals(Arrays.toString(randomIntegers), Arrays.toString(output));
 	}
 	
 	@Test
