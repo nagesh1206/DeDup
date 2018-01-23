@@ -43,7 +43,7 @@ public class DeDup {
 		int[] uniqueNumbers = null;
 		if (randomIntegers != null && randomIntegers.length > 0) {
 			int arrLength = randomIntegers.length;
-			if (arrLength <= 1) {
+			if (arrLength == 1) {
 				uniqueNumbers = randomIntegers;
 			} else {
 				Arrays.sort(randomIntegers);
